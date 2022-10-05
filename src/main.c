@@ -128,6 +128,7 @@ int app_main() {
 	// uint8_t sensor_comp = 7; // Get all measurements, i.e. temp, hum and pres
 	while (1) {
 
+		delay_ms(100);
 		struct bmp280_status stat = {0};
 		ret = bmp280_get_status(&stat, &dev);
 		if (ret < 0) {
