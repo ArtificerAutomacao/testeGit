@@ -1,3 +1,1 @@
-
-
 void analogReadInit(void);
